@@ -1,8 +1,8 @@
 __pycache__/
 .idea/
-test_dataset/image0000001.pkl
-test_dataset/image0000002.pkl
-test_dataset/image0000003.pkl
-test_dataset/image0000004.pkl
-test_dataset/image0000005.pkl
-test_dataset/image0000006.pkl
+test_dataset/upenn/image0000001.pkl
+test_dataset/upenn/image0000002.pkl
+test_dataset/upenn/image0000003.pkl
+test_dataset/upenn/image0000004.pkl
+test_dataset/upenn/image0000005.pkl
+test_dataset/upenn/image0000006.pkl

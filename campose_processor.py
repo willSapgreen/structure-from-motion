@@ -820,7 +820,7 @@ if __name__ == '__main__':
     import os
 
     cur_path = os.path.dirname(__file__)
-    test_dataset_path = os.path.join(cur_path, 'test_dataset')
+    test_dataset_path = os.path.join(cur_path, 'test_dataset', 'opencv')
 
     # Load testing data
     ref_r = np.load(test_dataset_path + '/ess_self_r.npy')

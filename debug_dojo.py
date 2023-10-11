@@ -22,7 +22,7 @@ cur_path = os.path.dirname(__file__)
 # test_dataset_path = os.path.join(cur_path, 'test_dataset')
 # img_path = os.path.join(test_dataset_path, "image0000001.bmp")
 
-test_dataset_path = os.path.join(cur_path, 'test_dataset')
+test_dataset_path = os.path.join(cur_path, 'test_dataset/upenn')
 img_path = os.path.join(test_dataset_path, "image0000001.bmp")
 imgl = cv2.imread(img_path)
 

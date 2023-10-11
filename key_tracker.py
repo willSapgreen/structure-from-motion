@@ -354,7 +354,7 @@ if __name__ == '__main__':
     from view_processor import ViewProcessor, IMG_EXT
 
     cur_path = os.path.dirname(__file__)
-    test_dataset_path = os.path.join(cur_path, 'test_dataset')
+    test_dataset_path = os.path.join(cur_path, 'test_dataset', 'upenn')
 
     # Set up testing params
     KEY_TYPE = 'sift'

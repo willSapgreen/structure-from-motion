@@ -209,7 +209,7 @@ if __name__ == '__main__':
 
     print('=== Start ViewProcessor Unit Test ===')
     file_path = os.path.dirname(__file__)  # os.getcwd()
-    test_dataset_path = os.path.join(file_path, 'test_dataset')
+    test_dataset_path = os.path.join(file_path, 'test_dataset', 'upenn')
 
     # Test key detector creation
     # vp = ViewProcessor('sift')

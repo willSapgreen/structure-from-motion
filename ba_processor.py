@@ -451,7 +451,7 @@ if __name__ == '__main__':
     import os
     import cv2 as cv
     cur_path = os.path.dirname(__file__)
-    test_dataset_path = os.path.join(cur_path, 'test_dataset')
+    test_dataset_path = os.path.join(cur_path, 'test_dataset', 'upenn')
 
     # Set up the params
     K = np.array([[568.996140852, 0, 643.21055941],
@@ -508,6 +508,8 @@ if __name__ == '__main__':
     fig = plt.figure()
     i = 0
     print('Visualizing {} views'.format(len(bp_processor.view_processor.view_list)))
+    loc_all = np.zeros((len(bp_processor.view_processor.view_list), 3))
+    rot_all = np.zeros((len(bp_processor.view_processor.view_list), 3, 3))
     for view_ in bp_processor.view_processor.view_list:
         print('{}-th view loc is \n {}'.format(i, view_.loc.T))
         print('{}-th view ori is \n {}'.format(i, Rotation.from_matrix(view_.rot).as_euler('zyx', degrees=True)))
@@ -523,8 +525,10 @@ if __name__ == '__main__':
         dot = mpl.markers.MarkerStyle(marker=".")
         ax.scatter((C[0]), (C[2]), marker=t, s=250, color=color_map[i])
         ax.scatter((C[0]), (C[2]), marker=dot, s=250, color='black')
-        i += 1
 
+        loc_all[i, :] = view_.loc.T
+        rot_all[i, :, :] = view_.rot
+        i += 1
 
     tri_pt_num = bp_processor.tri_processor.tri_pts.shape[1]
     print('Visualizing {} triangulated points'.format(tri_pt_num))
