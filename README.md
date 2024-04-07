@@ -1,7 +1,7 @@
 # Structure From Motion Pipeline
 ## Abstract
 This repository contains the following functionality/algorithm implementations for SfM:
-| Functionality | Source  | Class Name |
+| Functionality | Implementation  | Class Name |
 | ------------- | ------- | ------- |
 | feature detection | OpenCV | view_processor (VP) |
 | feature matching | OpenCV | key_tracker (KT) |
